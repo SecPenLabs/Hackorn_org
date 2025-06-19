@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "AI & Web Bootcamp – Hyderabad Edition",
+    "date": "July 6, 2025",
+    "location": "SRM University, Hyderabad",
+    "image": "/images/image.png",
+    "link": "/events/ai-bootcamp"
+  },
+  {
+    "id": 2,
+    "title": "Intro to NextJs Workshop",
+    "date": "July 12, 2025",
+    "location": "IIT Madras Research Park",
+    "image": "/images/blockchain.png",
+    "link": "/events/blockchain-workshop"
+  },
+  {
+    "id": 3,
+    "title": "Hackathon Adobe",
+    "date": "July 20, 2025",
+    "location": "Online (Zoom)",
+    "image": "/images/hackathon.png",
+    "link": "/events/hackathon-101"
+  }
+]
