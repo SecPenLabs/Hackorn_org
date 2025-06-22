@@ -34,12 +34,12 @@ const involvementItems = [
 
 const GetInvolved = () => {
     return (
-        <>
+        <div className="font-sans">
             <BackgroundBeams />
             <section className="bg-black min-h-screen py-20 px-6">
                 <div className="max-w-6xl mx-auto text-center">
                     <div>
-                        <h2 className="text-5xl font-extrabold text-gray-400 dark:text-white mb-4">
+                        <h2 className="text-5xl font-extrabold text-gray-400 dark:text-white mb-4 font-mono">
                             🌟 Get Involved
                         </h2>
                     </div>
@@ -58,7 +58,7 @@ const GetInvolved = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 
@@ -73,7 +73,7 @@ const InvolveCard = ({
     link: string;
     icon: React.ElementType;
 }) => (
-    <div className="bg-black border border-gray-800 rounded-2xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+    <div className="bg-black border border-gray-800 rounded-2xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full">
         <div className="w-12 h-12 bg-blue-100 text-gray-800 dark:text-blue-300 flex items-center justify-center rounded-full mb-4 mx-auto group-hover:scale-110 transition-transform">
             <Icon size={24} />
         </div>
