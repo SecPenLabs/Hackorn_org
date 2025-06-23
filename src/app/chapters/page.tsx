@@ -33,10 +33,11 @@ export default function ChapterSearchPage() {
           {filteredChapters.map((chapter) => (
             <div key={chapter.name} className="bg-white rounded-lg overflow-hidden shadow-sm">
               <div className="aspect-video relative">
-                <img
+                <Image
                   src={chapter.image}
                   alt={`${chapter.name} Campus`}
-                  className="w-full h-full object-cover"
+                  className="object-cover"
+                  layout="fill"
                 />
               </div>
               <div className="p-4 sm:p-6 font-[var(--font-poppins)]">
