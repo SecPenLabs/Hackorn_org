@@ -5,22 +5,43 @@
     "date": "July 6, 2025",
     "location": "SRM University, Hyderabad",
     "image": "/images/image.png",
-    "link": "/events/ai-bootcamp"
+    "link": "/events/ai-bootcamp",
+    "status": "upcoming"
   },
   {
     "id": 2,
-    "title": "Intro to NextJs Workshop",
-    "date": "July 12, 2025",
+    "title": "Intro to Blockchain Workshop",
+    "date": "June 5, 2025",
     "location": "IIT Madras Research Park",
     "image": "/images/blockchain.png",
-    "link": "/events/blockchain-workshop"
+    "link": "/events/blockchain-workshop",
+    "status": "past"
   },
   {
     "id": 3,
-    "title": "Hackathon Adobe",
-    "date": "July 20, 2025",
+    "title": "Hackathon 101 – Beginner’s Guide",
+    "date": "Today",
     "location": "Online (Zoom)",
     "image": "/images/hackathon.png",
-    "link": "/events/hackathon-101"
+    "link": "/events/hackathon-101",
+    "status": "ongoing"
+  },
+{
+  "id": 4,
+  "title": "Data Science Bootcamp",
+  "date": "August 15, 2025",
+  "location": "Online (Webinar)",
+  "image": "/images/data-science.png",
+  "link": "/events/data-science-bootcamp",
+  "status": "upcoming"
+},
+  {
+    "id": 5,
+    "title": "Cybersecurity Essentials Workshop",
+    "date": "September 10, 2025",
+    "location": "Tech Park, Bangalore",
+    "image": "/images/cybersecurity.png",
+    "link": "/events/cybersecurity-workshop",
+    "status": "upcoming"
   }
 ]
