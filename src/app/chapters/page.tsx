@@ -14,7 +14,7 @@ export default function ChapterSearchPage() {
 
   return (
     <div className="min-h-screen p-4 sm:p-6 md:p-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold mb-6 font-[var(--font-roboto-mono)] text-white">
           Explore Hackor[n] Chapters
         </h1>
@@ -29,43 +29,25 @@ export default function ChapterSearchPage() {
         />
 
         {/* Chapters Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredChapters.map((chapter) => (
-            <div key={chapter.name} className="bg-white rounded-lg overflow-hidden shadow-sm">
-              <div className="aspect-video relative">
-                <Image
-                  src={chapter.image}
-                  alt={`${chapter.name} Campus`}
-                  className="object-cover"
-                  layout="fill"
-                />
-              </div>
-              <div className="p-4 sm:p-6 font-[var(--font-poppins)]">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-gray-500 text-sm">{chapter.date}</span>
-                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-1 font-[var(--font-roboto-mono)]">
-                      {chapter.name}
-                    </h3>
-                  </div>
-                  <Link
-                    href={chapter.link}
-                    className="flex items-center text-gray-700 hover:text-gray-900 transition-colors"
-                  >
-                    <span className="mr-2">Read more</span>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path
-                        d="M6 12L10 8L6 4"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </Link>
+            <Link key={chapter.name} href={chapter.link} className="block">
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg overflow-hidden shadow-sm cursor-pointer">
+                <div className="aspect-video relative">
+                  <Image
+                    src={chapter.image}
+                    alt={`${chapter.name} Campus`}
+                    className="object-cover"
+                    layout="fill"
+                  />
+                </div>
+                <div className="p-4 sm:p-6 font-[var(--font-poppins)]">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 font-[var(--font-roboto-mono)]">
+                    {chapter.name}
+                  </h3>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
